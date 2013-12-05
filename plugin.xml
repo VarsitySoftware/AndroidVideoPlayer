@@ -23,6 +23,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="plugins/src/com/phonegap/plugins/androidvideoplayer" />      
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="plugins/com.phonegap.plugins.androidvideoplayer" />      
      </platform>          
 </plugin>
