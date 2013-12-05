@@ -5,7 +5,7 @@
  * @author John Weaver
  *
  */
-package com.phonegap.plugins.androidvideoplayer;
+package com.varsitysoftware.plugins.androidvideoplayer;
 
 
 import java.io.File;
