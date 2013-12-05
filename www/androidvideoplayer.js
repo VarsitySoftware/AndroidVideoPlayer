@@ -20,6 +20,6 @@ if (!window.plugins) {
     window.plugins = {};
 }
 if (!window.plugins.androidVideoPlayer) {
-  alert('xx');
+  
     window.plugins.androidVideoPlayer = cordova.require("cordova/plugin/androidvideoplayer");
 }
