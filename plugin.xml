@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="org.devgirl.calendar"
+      version="0.1.0">
+    <name>AndroidVideoPlayer</name>
+    <description>Sample PhoneGap Calendar Plugin</description>
+    <license>MIT</license>
+    
+ 
+    <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
+        <clobbers target="window.androidvideoplayer" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AndroidVideoPlayer">
+                <param name="android-package" value="com.varsitysoftware.rhmbs.androidvideoplayer"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="plugins" />      
+     </platform>          
+</plugin>
