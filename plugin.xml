@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
- 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.phonegap.plugins.androidvideoplayer"
-    version="2.0.0">
+    version="1.0.0">
 
     <name>AndroidVideoPlayer</name>
         
@@ -12,8 +11,8 @@
         <engine name="cordova" version=">=2.4.0" />
     </engines>
         
-    <js-module src="video.js" name="AndroidVideoPlayer">
-        <clobbers target="window.AndroidVideoPlayer" />
+    <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
+        <clobbers target="window.plugins.androidVideoPlayer" />
     </js-module>
 
     <!-- android -->
@@ -24,6 +23,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="plugins" />      
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/phonegap/plugins/androidvideoplayer" />      
      </platform>          
 </plugin>
