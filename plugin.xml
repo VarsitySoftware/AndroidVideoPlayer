@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="org.devgirl.calendar"
-      version="0.1.0">
+ 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.phonegap.plugins.androidvideoplayer"
+    version="2.0.0">
+
     <name>AndroidVideoPlayer</name>
-    <description>Sample PhoneGap Calendar Plugin</description>
-    <license>MIT</license>
-    
- 
-    <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
-        <clobbers target="window.androidvideoplayer" />
+        
+    <engines>
+        <engine name="cordova" version=">=2.4.0" />
+    </engines>
+        
+    <js-module src="AndroidVideoPlayer.js" name="AndroidVideoPlayer">
+        <clobbers target="window.AndroidVideoPlayer" />
     </js-module>
- 
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
