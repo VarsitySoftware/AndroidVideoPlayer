@@ -1,5 +1,4 @@
-cordova.define("cordova/plugin/androidvideoplayer",
-  function(require, exports, module) {
+
     var exec = require("cordova/exec");
     var AndroidVideoPlayer = function () {};
 
@@ -14,7 +13,7 @@ cordova.define("cordova/plugin/androidvideoplayer",
 
     var androidVideoPlayer = new AndroidVideoPlayer();
     module.exports = androidVideoPlayer;
-});
+
 
 if (!window.plugins) {
     window.plugins = {};
