@@ -2,7 +2,7 @@
  
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.phonegap.plugins.androidvideoplayer"
+    id="com.varsitysoftware.plugins.androidvideoplayer"
     version="1.0.0">
 
     <name>AndroidVideoPlayer</name>
@@ -12,17 +12,17 @@
     </engines>
         
     <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
-        <clobbers target="window.plugins.androidVideoPlayer" />
+        <clobbers target="window.plugins.AndroidVideoPlayer" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AndroidVideoPlayer">
-                <param name="android-package" value="com.phonegap.plugins.AndroidVideoPlayer"/>
+                <param name="android-package" value="com.varsitysoftware.plugins.AndroidVideoPlayer"/>
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/phonegap/plugins/androidvideoplayer" />      
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/varsitysoftware/plugins/androidvideoplayer" />      
      </platform>          
 </plugin>
