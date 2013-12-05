@@ -12,7 +12,7 @@
         <engine name="cordova" version=">=2.4.0" />
     </engines>
         
-    <js-module src="AndroidVideoPlayer.js" name="AndroidVideoPlayer">
+    <js-module src="video.js" name="AndroidVideoPlayer">
         <clobbers target="window.AndroidVideoPlayer" />
     </js-module>
 
