@@ -12,7 +12,7 @@
     </engines>
         
     <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
-        <clobbers target="window.plugins.AndroidVideoPlayer" />
+        <clobbers target="window.plugins.androidVideoPlayer" />
     </js-module>
 
     <!-- android -->
