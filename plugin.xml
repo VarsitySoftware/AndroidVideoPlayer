@@ -17,9 +17,9 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="assets/www/config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AndroidVideoPlayer">
-                <param name="android-package" value="com.phonegap.plugins.androidvideoplayer"/>
+                <param name="android-package" value="com.phonegap.plugins.AndroidVideoPlayer"/>
             </feature>
         </config-file>
  
