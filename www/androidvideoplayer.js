@@ -1,3 +1,5 @@
+cordova.define("com.varsitysoftware.plugins.androidvideoplayer.AndroidVideoPlayer",
+  function(require, exports, module) {
     var exec = require("cordova/exec");
     var AndroidVideoPlayer = function () {};
 
@@ -12,7 +14,7 @@
 
     var androidVideoPlayer = new AndroidVideoPlayer();
     module.exports = androidVideoPlayer;
-
+});
 
 if (!window.plugins) {
     window.plugins = {};
