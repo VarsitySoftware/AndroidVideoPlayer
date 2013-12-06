@@ -1,4 +1,3 @@
-
     var exec = require("cordova/exec");
     var AndroidVideoPlayer = function () {};
 
@@ -7,8 +6,8 @@
      *
      * @param url           The url to play
      */
-    AndroidVideoPlayer.prototype.play = function(url) {
-        exec(null, null, "AndroidVideoPlayer", "playVideo", [url]);
+    AndroidVideoPlayer.prototype.play = function(url, onStart, onFail) {
+        exec(onStart, onFail, "AndroidVideoPlayer", "playVideo", [url]);
     };
 
     var androidVideoPlayer = new AndroidVideoPlayer();
