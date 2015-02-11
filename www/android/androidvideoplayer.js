@@ -1,1 +1,1 @@
-window.playAndroidVideo = function (strFilePath, onStart, onFail) { cordova.exec(onStart, onFail, "AndroidVideoPlayer", "playAndroidVideo", [strFilePath]); };
+window.playAndroidVideo = function (strURL, onStart, onFail) { cordova.exec(onStart, onFail, "AndroidVideoPlayer", "playAndroidVideo", [strURL]); };
