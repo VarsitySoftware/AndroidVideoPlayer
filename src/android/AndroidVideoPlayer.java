@@ -20,6 +20,7 @@ import org.json.JSONException;
 
 import android.content.ContentUris;
 import android.os.Build;
+import android.database.Cursor;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
