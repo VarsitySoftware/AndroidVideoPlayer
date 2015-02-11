@@ -18,6 +18,7 @@ import java.net.URLConnection;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import android.content.ContentUris;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.DocumentsContract;
