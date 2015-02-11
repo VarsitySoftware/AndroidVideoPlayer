@@ -18,6 +18,13 @@ import java.net.URLConnection;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import android.os.Build;
+import android.os.Environment;
+import android.provider.DocumentsContract;
+import android.provider.MediaStore;
+import android.provider.MediaStore.Video.Thumbnails;
+import android.provider.OpenableColumns;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -26,6 +33,8 @@ import android.net.Uri;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
+
+import android.util.Log;
 
 public class AndroidVideoPlayer extends CordovaPlugin {
     private static final String YOU_TUBE = "youtube.com";
@@ -54,6 +63,9 @@ public class AndroidVideoPlayer extends CordovaPlugin {
     }
 
     private void playVideo(String url) throws IOException {
+    	
+    	Context context = this.cordova.getActivity().getApplicationContext();
+		
             if (url.contains("bit.ly/") || url.contains("goo.gl/") || url.contains("tinyurl.com/") || url.contains("youtu.be/")) {
                         //support for google / bitly / tinyurl / youtube shortens
                         URLConnection con = new URL(url).openConnection();
