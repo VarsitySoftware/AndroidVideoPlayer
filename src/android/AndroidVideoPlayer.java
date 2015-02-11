@@ -115,7 +115,7 @@ public class AndroidVideoPlayer extends CordovaPlugin {
         {
             Uri uriMediaURL = Uri.parse(url);
             String strPath = getPath(context, uriMediaURL);
-            Log.i("CC", "XXXXXstrPath = " + strPath);
+            //Log.i("CC", "XXXXXstrPath = " + strPath);
             
             uri = Uri.parse("file://" + strPath);
             
@@ -123,7 +123,7 @@ public class AndroidVideoPlayer extends CordovaPlugin {
             intent = new Intent(Intent.ACTION_VIEW);
             intent.setDataAndType(uri, "video/*");
             
-            Log.i("CC", "XXXXXstrPathZZZZZZ");
+            //Log.i("CC", "XXXXXstrPathZZZZZZ");
         }
             else {
             // Display video player
