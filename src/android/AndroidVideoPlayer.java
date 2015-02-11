@@ -5,7 +5,7 @@
  * @author John Weaver
  *
  */
-package com.varsitysoftware.plugins.androidvideoplayer;
+package com.varsitysoftware.cordova.androidvideoplayer;
 
 
 import java.io.File;
