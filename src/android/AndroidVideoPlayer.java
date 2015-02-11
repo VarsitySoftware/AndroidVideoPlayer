@@ -49,8 +49,8 @@ public class AndroidVideoPlayer extends CordovaPlugin {
         String result = "";
 
         try {
-            if (action.equals("playVideo")) {
-                playVideo(args.getString(0));
+            if (action.equals("playAndroidVideo")) {
+                playAndroidVideo(args.getString(0));
             }
             else {
                 status = PluginResult.Status.INVALID_ACTION;
@@ -64,7 +64,7 @@ public class AndroidVideoPlayer extends CordovaPlugin {
         return true;
     }
 
-    private void playVideo(String url) throws IOException {
+    private void playAndroidVideo(String url) throws IOException {
     	
     	Context context = this.cordova.getActivity().getApplicationContext();
 		
