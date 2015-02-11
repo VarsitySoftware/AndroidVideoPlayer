@@ -11,8 +11,8 @@
         <engine name="cordova" version=">=2.4.0" />
     </engines>
         
-    <js-module src="www/androidvideoplayer.js" name="AndroidVideoPlayer">
-        <clobbers target="window.plugins.androidVideoPlayer" />
+    <js-module src="www/android/androidvideoplayer.js" name="AndroidVideoPlayer">
+        <clobbers target="window.AndroidVideoPlayer" />
     </js-module>
 
     <!-- android -->
