@@ -23,6 +23,6 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="app/src/com/varsitysoftware/cordova/androidvideoplayer" />      
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/varsitysoftware/cordova/androidvideoplayer" />      
      </platform>          
 </plugin>
