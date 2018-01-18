@@ -17,12 +17,12 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="app/src/main/res/xml/config.xml" parent="/*">
             <feature name="AndroidVideoPlayer">
                 <param name="android-package" value="com.varsitysoftware.cordova.androidvideoplayer.AndroidVideoPlayer"/>
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/varsitysoftware/cordova/androidvideoplayer" />      
+        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="app/src/com/varsitysoftware/cordova/androidvideoplayer" />      
      </platform>          
 </plugin>
