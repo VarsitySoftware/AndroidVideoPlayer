@@ -2,27 +2,27 @@
  
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.varsitysoftware.cordova.androidvideoplayer"
+    id="com.varsitysoftware.plugins.android.videoplayer"
     version="1.0.0">
 
-    <name>AndroidVideoPlayer</name>
+    <name>VideoPlayer</name>
         
     <engines>
         <engine name="cordova" version=">=2.4.0" />
     </engines>
         
-    <js-module src="www/android/androidvideoplayer.js" name="AndroidVideoPlayer">
-        <clobbers target="window.AndroidVideoPlayer" />
+    <js-module src="www/android/androidvideoplayer.js" name="VideoPlayer">
+        <clobbers target="window.VideoPlayer" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="AndroidVideoPlayer">
-                <param name="android-package" value="com.varsitysoftware.cordova.androidvideoplayer.AndroidVideoPlayer"/>
+            <feature name="VideoPlayer">
+                <param name="android-package" value="com.varsitysoftware.plugins.android.videoplayer.VideoPlayer"/>
             </feature>
         </config-file>
  
-        <source-file src="src/android/AndroidVideoPlayer.java" target-dir="src/com/varsitysoftware/cordova/androidvideoplayer" />      
+        <source-file src="src/android/VideoPlayer.java" target-dir="src/com/varsitysoftware/plugins/android/videoplayer" />      
      </platform>          
 </plugin>
