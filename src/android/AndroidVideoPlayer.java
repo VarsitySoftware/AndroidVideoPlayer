@@ -5,7 +5,7 @@
  * @author John Weaver
  *
  */
-package com.varsitysoftware.cordova.androidvideoplayer;
+package com.varsitysoftware.plugins.android.videoplayer;
 
 
 import java.io.File;
@@ -38,7 +38,7 @@ import org.apache.cordova.PluginResult;
 
 import android.util.Log;
 
-public class AndroidVideoPlayer extends CordovaPlugin {
+public class VideoPlayer extends CordovaPlugin {
     private static final String YOU_TUBE = "youtube.com";
     private static final String ASSETS = "file:///android_asset/";
     private static final String CONTENT = "content://";
